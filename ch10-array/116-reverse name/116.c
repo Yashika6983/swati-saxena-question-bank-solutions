@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include<string.h>
+
+int main(){
+
+   char name [20];
+   printf("Enter your name : ");
+   scanf("%s",name);
+
+   int i, length =strlen(name);
+
+   for (i=length-1;i>=0;i--)
+   {
+      printf("%c",name[i]);
+   }
+
+   return 0;
+}
