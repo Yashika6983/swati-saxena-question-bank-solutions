@@ -15,25 +15,14 @@ int main()
       }
       printf("\n");
    }
-
-   for (j=0;j<3;j++)
+   
+   for (i=0;i<3;i++)
+   {for (j=0;j<3;j++)
    {
       sum=sum+matrix[1][j];
    }
-
-   printf("The sum of 1st row is %d.\n",sum);
-   sum=0;
-    for (j=0;j<3;j++)
-   {
-      sum=sum+matrix[1][j];
+   printf("The sum of row %d is %d.\n",i+1 , sum);
+   sum =0;
    }
-   printf("The sum of 2nd row is %d.\n",sum);
-   sum=0;
-    for (j=0;j<3;j++)
-   {
-      sum=sum+matrix[1][j];
-   }
-   printf("The sum of 3rd row is %d.\n",sum);
-
    return 0 ;
 }
